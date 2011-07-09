@@ -5,6 +5,18 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloWorldAction extends ActionSupport {
 
+    private static int helloCount = 0;
+
+    public int getHelloCount() {
+    	return helloCount;
+    }
+
+    public void setHelloCount(int helloCount) {
+    	HelloWorldAction.helloCount = helloCount;
+    }
+    
+    
+    
 	private static final long serialVersionUID = 1L;
 
 	private MessageStore messageStore;
@@ -12,6 +24,7 @@ public class HelloWorldAction extends ActionSupport {
 	public String execute() throws Exception {
 		
 		messageStore = new MessageStore() ;
+		helloCount++;
 		return SUCCESS;
 	}
 
