@@ -11,7 +11,7 @@
 
 
 	
-<project name="Struts2" default="archive" basedir=".">
+<project name="Struts_2" default="archive" basedir=".">
 	
     <description>
            Basic Struts 2 Java Web Application
@@ -89,10 +89,10 @@
 	
 	<target name="build" depends="compile" description="Copies all non Java classes to build directoy">
 		<copy todir="${build.home}">
-			<fileset dir="${webapp.home}" excludes="CVS,**/*.class" />
+			<fileset dir="${webapp.home}" excludes="SVN,**/*.class" />
 		</copy>
 		<copy todir="${build.home}/WEB-INF/classes">
-			<fileset dir="${source.home}" excludes="CVS,**/*.java" />
+			<fileset dir="${source.home}" excludes="SVN,**/*.java" />
 		</copy>
 	</target>
 	
