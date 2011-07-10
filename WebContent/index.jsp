@@ -26,7 +26,17 @@
 
 </s:form>
 
-<p><a href="register.jsp">Please register</a> for our prize drawing.</p>
+<s:url action="registerInput" var="registerInputLink" >
+ <s:param name="request_locale">en</s:param>
+</s:url>
+<p><a href="${registerInputLink}">Please register</a> for our prize drawing.</p>
+<h3>Registrierung</h3>
+<s:url action="registerInput" var="registerInputLinkES">
+    <s:param name="request_locale">de</s:param>
+</s:url>
+<p></p><a href="${registerInputLinkES}">Bitte registrieren</a> um am Gewinnspiel teilzunehmen.</p>
 
+<hr />
+<s:text name="contact" />
 </body>
 </html>

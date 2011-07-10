@@ -2,19 +2,19 @@
 
 
 <!-- ====================================================================== 
-     Date:     July 2011
+     Date:     January 2010
      
-     Project:  Struts 2
+     Project:  Struts 2 Message Resource
      
-     Author:   Franz Heinfling
+     Author:   Bruce Phillips
      ====================================================================== -->
 
 
 	
-<project name="Struts_2" default="archive" basedir=".">
+<project name="Struts2" default="archive" basedir=".">
 	
     <description>
-           Basic Struts 2 Java Web Application
+           Example of validating a form submission using Struts 2
     </description>
 	
 	<property file="build.properties"/>
